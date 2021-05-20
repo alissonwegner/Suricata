@@ -1,0 +1,553 @@
+---------------------------------------------------------------------
+ID 1 --- protocol-command-decode
+Assinatura: SURICATA STREAM 3way handshake wrong seq wrong ack ----- Intrusões: 32 
+Assinatura: SURICATA STREAM CLOSEWAIT FIN out of window ----- Intrusões: 16 
+Assinatura: SURICATA STREAM FIN1 FIN with wrong seq ----- Intrusões: 8 
+Assinatura: SURICATA HTTP missing Host header ----- Intrusões: 149 
+Assinatura: SURICATA STREAM 3way handshake SYN resend different seq on SYN recv ----- Intrusões: 79 
+Assinatura: SURICATA STREAM 3way handshake SYNACK resend with different ack ----- Intrusões: 76 
+Assinatura: ET INFO Session Traversal Utilities for NAT (STUN Binding Request obsolete rfc 3489 CHANGE-REQUEST attribute change IP flag false change port flag false) ----- Intrusões: 1 
+Assinatura: ET INFO Session Traversal Utilities for NAT (STUN Binding Request obsolete rfc 3489 CHANGE-REQUEST attribute change IP flag true change port flag false) ----- Intrusões: 0 
+Assinatura: ET INFO Session Traversal Utilities for NAT (STUN Binding Request obsolete rfc 3489 CHANGE-REQUEST attribute change IP flag false change port flag true) ----- Intrusões: 0 
+Assinatura: SURICATA TLS invalid handshake message ----- Intrusões: 50 
+Assinatura: SURICATA TLS invalid record/traffic ----- Intrusões: 2 
+Assinatura: SURICATA TCPv4 invalid checksum ----- Intrusões: 143 
+Assinatura: SURICATA UDPv6 invalid checksum ----- Intrusões: 4 
+Assinatura: SURICATA STREAM TIMEWAIT ACK with wrong seq ----- Intrusões: 8 
+Assinatura: SURICATA STREAM Packet with invalid timestamp ----- Intrusões: 12 
+Assinatura: SURICATA HTTP unable to match response to request ----- Intrusões: 11 
+Assinatura: SURICATA Applayer Mismatch protocol both directions ----- Intrusões: 17 
+Assinatura: SURICATA Applayer Detect protocol only one direction ----- Intrusões: 5 
+Assinatura: SURICATA STREAM Last ACK with wrong seq ----- Intrusões: 3 
+Assinatura: SURICATA STREAM ESTABLISHED packet out of window ----- Intrusões: 8 
+Assinatura: SURICATA STREAM ESTABLISHED invalid ack ----- Intrusões: 7 
+Assinatura: SURICATA STREAM Packet with invalid ack ----- Intrusões: 4 
+Assinatura: SURICATA STREAM FIN invalid ack ----- Intrusões: 0 
+Assinatura: SURICATA STREAM FIN out of window ----- Intrusões: 4 
+Assinatura: SURICATA SMTP data command rejected ----- Intrusões: 0 
+Assinatura: SURICATA HTTP Request line incomplete ----- Intrusões: 2 
+Assinatura: SURICATA DHCP truncated options ----- Intrusões: 2 
+Assinatura: SURICATA HTTP Host header invalid ----- Intrusões: 2 
+Assinatura: SURICATA STREAM 3way handshake excessive different SYN/ACKs ----- Intrusões: 1 
+Assinatura: SURICATA STREAM excessive retransmissions ----- Intrusões: 3 
+Assinatura: SURICATA UDPv4 invalid checksum ----- Intrusões: 17 
+Assinatura: SURICATA TLS error message encountered ----- Intrusões: 7 
+Assinatura: SURICATA STREAM bad window update ----- Intrusões: 2 
+Assinatura: SURICATA ICMPv4 invalid checksum ----- Intrusões: 4 
+Assinatura: SURICATA HTTP METHOD terminated by non-compliant character ----- Intrusões: 2 
+Assinatura: SURICATA TLS invalid heartbeat encountered, possible exploit attempt (heartbleed) ----- Intrusões: 0 
+
+====== RESULTADO ======
+Total Intrusão: 681
+Maior Quantidade: ID: 45 - Assinatura: SURICATA HTTP missing Host header - Quantidade: 149
+---------------------------------------------------------------------
+
+
+---------------------------------------------------------------------
+ID 2 --- bad-unknown
+Assinatura: ET SCAN Suspicious inbound to MSSQL port 1433 ----- Intrusões: 3385 
+Assinatura: ET DNS Query to a *.top domain - Likely Hostile ----- Intrusões: 14 
+Assinatura: ET INFO Observed DNS Query to .biz TLD ----- Intrusões: 19 
+Assinatura: ET SCAN Suspicious inbound to PostgreSQL port 5432 ----- Intrusões: 124 
+Assinatura: ET SCAN Suspicious inbound to mySQL port 3306 ----- Intrusões: 144 
+Assinatura: ET WEB_SERVER WebShell Generic - wget http - POST ----- Intrusões: 34 
+Assinatura: ET INFO Observed DNS Query to .cloud TLD ----- Intrusões: 11 
+Assinatura: ET SCAN Suspicious inbound to Oracle SQL port 1521 ----- Intrusões: 53 
+Assinatura: GPL ATTACK_RESPONSE command completed ----- Intrusões: 1 
+Assinatura: GPL ATTACK_RESPONSE command error ----- Intrusões: 0 
+Assinatura: ET WEB_SERVER Possible bash shell piped to dev tcp Inbound to WebServer ----- Intrusões: 0 
+Assinatura: ET WEB_SERVER Possible bash shell piped to dev udp Inbound to WebServer ----- Intrusões: 0 
+Assinatura: ET DNS Query for .cc TLD ----- Intrusões: 3 
+Assinatura: ET INFO DNS Query for Suspicious .ml Domain ----- Intrusões: 1 
+Assinatura: ET DOS DNS Amplification Attack Inbound ----- Intrusões: 1 
+Assinatura: ET SCAN Suspicious inbound to mSQL port 4333 ----- Intrusões: 3 
+Assinatura: ET MALWARE Double HTTP/1.1 Header Inbound - Likely Hostile Traffic ----- Intrusões: 1 
+
+====== RESULTADO ======
+Total Intrusão: 3794
+Maior Quantidade: ID: 2 - Assinatura: ET SCAN Suspicious inbound to MSSQL port 1433 - Quantidade: 3385
+---------------------------------------------------------------------
+
+
+---------------------------------------------------------------------
+ID 3 --- misc-attack
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 45 ----- Intrusões: 16 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 17 ----- Intrusões: 7 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 37 ----- Intrusões: 47 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 28 ----- Intrusões: 33 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 35 ----- Intrusões: 30 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 59 ----- Intrusões: 78 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 36 ----- Intrusões: 26 
+Assinatura: ET DROP Dshield Block Listed Source group 1 ----- Intrusões: 127 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 82 ----- Intrusões: 39 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 30 ----- Intrusões: 4 
+Assinatura: ET DROP Spamhaus DROP Listed Traffic Inbound group 7 ----- Intrusões: 27 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 53 ----- Intrusões: 20 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 68 ----- Intrusões: 17 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 13 ----- Intrusões: 1 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 89 ----- Intrusões: 7 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 55 ----- Intrusões: 16 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 29 ----- Intrusões: 7 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 52 ----- Intrusões: 8 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 63 ----- Intrusões: 11 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 24 ----- Intrusões: 11 
+Assinatura: ET TOR Known Tor Exit Node Traffic group 49 ----- Intrusões: 1 
+Assinatura: ET TOR Known Tor Relay/Router (Not Exit) Node Traffic group 49 ----- Intrusões: 0 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 27 ----- Intrusões: 13 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 79 ----- Intrusões: 2 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 33 ----- Intrusões: 39 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 26 ----- Intrusões: 9 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 57 ----- Intrusões: 27 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 84 ----- Intrusões: 10 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 32 ----- Intrusões: 1 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 90 ----- Intrusões: 4 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 70 ----- Intrusões: 18 
+Assinatura: ET COMPROMISED Known Compromised or Hostile Host Traffic group 14 ----- Intrusões: 2 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 81 ----- Intrusões: 0 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 65 ----- Intrusões: 19 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 39 ----- Intrusões: 18 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 56 ----- Intrusões: 19 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 100 ----- Intrusões: 19 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 49 ----- Intrusões: 16 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 94 ----- Intrusões: 7 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 40 ----- Intrusões: 18 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 66 ----- Intrusões: 1 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 2 ----- Intrusões: 6 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 38 ----- Intrusões: 10 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 60 ----- Intrusões: 1 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 21 ----- Intrusões: 4 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 1 ----- Intrusões: 9 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 5 ----- Intrusões: 16 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 78 ----- Intrusões: 8 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 95 ----- Intrusões: 6 
+Assinatura: ET COMPROMISED Known Compromised or Hostile Host Traffic group 5 ----- Intrusões: 6 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 6 ----- Intrusões: 7 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 73 ----- Intrusões: 4 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 48 ----- Intrusões: 14 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 18 ----- Intrusões: 11 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 34 ----- Intrusões: 15 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 47 ----- Intrusões: 15 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 54 ----- Intrusões: 26 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 31 ----- Intrusões: 5 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 80 ----- Intrusões: 4 
+Assinatura: ET TOR Known Tor Exit Node Traffic group 36 ----- Intrusões: 1 
+Assinatura: ET TOR Known Tor Relay/Router (Not Exit) Node Traffic group 36 ----- Intrusões: 0 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 42 ----- Intrusões: 2 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 51 ----- Intrusões: 8 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 43 ----- Intrusões: 7 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 62 ----- Intrusões: 9 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 98 ----- Intrusões: 8 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 87 ----- Intrusões: 25 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 4 ----- Intrusões: 8 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 58 ----- Intrusões: 3 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 44 ----- Intrusões: 20 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 25 ----- Intrusões: 9 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 76 ----- Intrusões: 6 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 20 ----- Intrusões: 6 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 14 ----- Intrusões: 3 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 97 ----- Intrusões: 2 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 23 ----- Intrusões: 6 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 75 ----- Intrusões: 7 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 69 ----- Intrusões: 3 
+Assinatura: ET COMPROMISED Known Compromised or Hostile Host Traffic group 23 ----- Intrusões: 1 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 85 ----- Intrusões: 3 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 91 ----- Intrusões: 4 
+Assinatura: ET TOR Known Tor Exit Node Traffic group 113 ----- Intrusões: 1 
+Assinatura: ET TOR Known Tor Relay/Router (Not Exit) Node Traffic group 113 ----- Intrusões: 0 
+Assinatura: ET TOR Known Tor Exit Node Traffic group 117 ----- Intrusões: 1 
+Assinatura: ET TOR Known Tor Relay/Router (Not Exit) Node Traffic group 117 ----- Intrusões: 0 
+Assinatura: ET TOR Known Tor Exit Node Traffic group 135 ----- Intrusões: 1 
+Assinatura: ET TOR Known Tor Relay/Router (Not Exit) Node Traffic group 135 ----- Intrusões: 0 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 64 ----- Intrusões: 4 
+Assinatura: ET TOR Known Tor Exit Node Traffic group 57 ----- Intrusões: 2 
+Assinatura: ET TOR Known Tor Relay/Router (Not Exit) Node Traffic group 57 ----- Intrusões: 0 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 12 ----- Intrusões: 8 
+Assinatura: ET TOR Known Tor Exit Node Traffic group 100 ----- Intrusões: 1 
+Assinatura: ET TOR Known Tor Relay/Router (Not Exit) Node Traffic group 100 ----- Intrusões: 0 
+Assinatura: ET TOR Known Tor Exit Node Traffic group 18 ----- Intrusões: 1 
+Assinatura: ET TOR Known Tor Relay/Router (Not Exit) Node Traffic group 19 ----- Intrusões: 0 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 46 ----- Intrusões: 11 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 11 ----- Intrusões: 2 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 83 ----- Intrusões: 1 
+Assinatura: ET TOR Known Tor Exit Node Traffic group 67 ----- Intrusões: 1 
+Assinatura: ET TOR Known Tor Relay/Router (Not Exit) Node Traffic group 68 ----- Intrusões: 0 
+Assinatura: ET TOR Known Tor Exit Node Traffic group 133 ----- Intrusões: 1 
+Assinatura: ET TOR Known Tor Relay/Router (Not Exit) Node Traffic group 133 ----- Intrusões: 0 
+Assinatura: ET TOR Known Tor Exit Node Traffic group 62 ----- Intrusões: 1 
+Assinatura: ET TOR Known Tor Relay/Router (Not Exit) Node Traffic group 62 ----- Intrusões: 0 
+Assinatura: ET TOR Known Tor Exit Node Traffic group 14 ----- Intrusões: 1 
+Assinatura: ET TOR Known Tor Relay/Router (Not Exit) Node Traffic group 15 ----- Intrusões: 0 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 7 ----- Intrusões: 2 
+Assinatura: ET COMPROMISED Known Compromised or Hostile Host Traffic group 9 ----- Intrusões: 1 
+Assinatura: ET TOR Known Tor Exit Node Traffic group 41 ----- Intrusões: 2 
+Assinatura: ET TOR Known Tor Relay/Router (Not Exit) Node Traffic group 41 ----- Intrusões: 0 
+Assinatura: ET TOR Known Tor Relay/Router (Not Exit) Node Traffic group 58 ----- Intrusões: 0 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 19 ----- Intrusões: 5 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 15 ----- Intrusões: 2 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 99 ----- Intrusões: 6 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 8 ----- Intrusões: 3 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 16 ----- Intrusões: 10 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 67 ----- Intrusões: 5 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 72 ----- Intrusões: 2 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 77 ----- Intrusões: 2 
+Assinatura: ET TOR Known Tor Exit Node Traffic group 3 ----- Intrusões: 1 
+Assinatura: ET TOR Known Tor Relay/Router (Not Exit) Node Traffic group 3 ----- Intrusões: 0 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 61 ----- Intrusões: 2 
+Assinatura: ET COMPROMISED Known Compromised or Hostile Host Traffic group 12 ----- Intrusões: 1 
+Assinatura: ET TOR Known Tor Relay/Router (Not Exit) Node Traffic group 298 ----- Intrusões: 2 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 74 ----- Intrusões: 3 
+Assinatura: ET COMPROMISED Known Compromised or Hostile Host Traffic group 25 ----- Intrusões: 1 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 92 ----- Intrusões: 2 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 41 ----- Intrusões: 2 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 93 ----- Intrusões: 1 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 50 ----- Intrusões: 1 
+Assinatura: ET TOR Known Tor Exit Node Traffic group 99 ----- Intrusões: 1 
+Assinatura: ET TOR Known Tor Relay/Router (Not Exit) Node Traffic group 99 ----- Intrusões: 0 
+Assinatura: ET TOR Known Tor Exit Node Traffic group 37 ----- Intrusões: 1 
+Assinatura: ET TOR Known Tor Relay/Router (Not Exit) Node Traffic group 37 ----- Intrusões: 0 
+Assinatura: ET COMPROMISED Known Compromised or Hostile Host Traffic group 7 ----- Intrusões: 1 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 9 ----- Intrusões: 1 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 3 ----- Intrusões: 2 
+Assinatura: ET CINS Active Threat Intelligence Poor Reputation IP group 88 ----- Intrusões: 2 
+
+====== RESULTADO ======
+Total Intrusão: 1184
+Maior Quantidade: ID: 16 - Assinatura: ET DROP Dshield Block Listed Source group 1 - Quantidade: 127
+---------------------------------------------------------------------
+
+
+---------------------------------------------------------------------
+ID 4 --- attempted-recon
+Assinatura: GPL SNMP public access udp ----- Intrusões: 2 
+Assinatura: ET SCAN Potential SSH Scan ----- Intrusões: 240 
+Assinatura: ET SCAN Sipvicious Scan ----- Intrusões: 79 
+Assinatura: ET SCAN Sipvicious User-Agent Detected (friendly-scanner) ----- Intrusões: 287 
+Assinatura: GPL WEB_SERVER 403 Forbidden ----- Intrusões: 79 
+Assinatura: ET INFO User-Agent (python-requests) Inbound to Webserver ----- Intrusões: 17 
+Assinatura: ET WEB_SPECIFIC_APPS Microhard Systems 3G/4G Cellular Ethernet and Serial Gateway - Default Credentials ----- Intrusões: 0 
+Assinatura: GPL DNS named version attempt ----- Intrusões: 65 
+Assinatura: ET SCAN SQLNinja MSSQL Database User Rights Scan ----- Intrusões: 1 
+Assinatura: ET SCAN SQLNinja MSSQL Authentication Mode Scan ----- Intrusões: 0 
+Assinatura: ET SCAN SQLNinja MSSQL XPCmdShell Scan ----- Intrusões: 0 
+Assinatura: ET WEB_SERVER Muieblackcat scanner ----- Intrusões: 3 
+Assinatura: ET SCAN MS Terminal Server Traffic on Non-standard Port ----- Intrusões: 14 
+Assinatura: ET SCAN Potential VNC Scan 5900-5920 ----- Intrusões: 16 
+Assinatura: GPL RPC xdmcp info query ----- Intrusões: 41 
+Assinatura: ET VOIP Modified Sipvicious Asterisk PBX User-Agent ----- Intrusões: 4 
+Assinatura: ET SCAN Potential VNC Scan 5800-5820 ----- Intrusões: 7 
+Assinatura: GPL DNS named version attempt ----- Intrusões: 6 
+Assinatura: ET SCAN HID VertX and Edge door controllers discover ----- Intrusões: 12 
+Assinatura: ET EXPLOIT Netgear DGN Remote Command Execution ----- Intrusões: 2 
+Assinatura: ET EXPLOIT SSL excessive fatal alerts (possible POODLE attack against server) ----- Intrusões: 1 
+
+====== RESULTADO ======
+Total Intrusão: 876
+Maior Quantidade: ID: 22 - Assinatura: ET SCAN Sipvicious User-Agent Detected (friendly-scanner) - Quantidade: 287
+---------------------------------------------------------------------
+
+
+---------------------------------------------------------------------
+ID 5 --- targeted-activity
+Assinatura: ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management ----- Intrusões: 28 
+
+====== RESULTADO ======
+Total Intrusão: 28
+Maior Quantidade: ID: 26 - Assinatura: ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management - Quantidade: 28
+---------------------------------------------------------------------
+
+
+---------------------------------------------------------------------
+ID 6 --- attempted-admin
+Assinatura: ET SCAN ELF/Mirai Variant User-Agent (Inbound) ----- Intrusões: 8 
+Assinatura: ET EXPLOIT Multiple DrayTek Products Pre-authentication Remote RCE Inbound (CVE-2020-8515) M2 ----- Intrusões: 0 
+Assinatura: ET EXPLOIT COMTREND ADSL Router CT-5367 Remote DNS Change Attempt ----- Intrusões: 14 
+Assinatura: ET EXPLOIT HackingTrio UA (Hello, World) ----- Intrusões: 4 
+Assinatura: ET SCAN Mirai Variant User-Agent (Inbound) ----- Intrusões: 0 
+Assinatura: ET SCAN SQLNinja Attempt To Recreate xp_cmdshell Using sp_configure ----- Intrusões: 1 
+Assinatura: ET SCAN SQLNinja Attempt To Create xp_cmdshell Session ----- Intrusões: 0 
+Assinatura: ET WEB_SERVER SQLi - SELECT and sysobject ----- Intrusões: 0 
+Assinatura: ET WEB_SERVER ThinkPHP RCE Exploitation Attempt ----- Intrusões: 6 
+Assinatura: ET EXPLOIT Linksys E-Series Device RCE Attempt ----- Intrusões: 3 
+Assinatura: ET EXPLOIT Linksys E-Series Device RCE Attempt Outbound ----- Intrusões: 0 
+Assinatura: ET HUNTING Suspicious Chmod Usage in URI (Inbound) ----- Intrusões: 1 
+Assinatura: ET EXPLOIT MVPower DVR Shell UCE ----- Intrusões: 0 
+Assinatura: ET SCAN LibSSH Based Frequent SSH Connections Likely BruteForce Attack ----- Intrusões: 1 
+Assinatura: ET WEB_SERVER WGET Command Specifying Output in HTTP Headers ----- Intrusões: 3 
+Assinatura: ET EXPLOIT D-Link Devices Home Network Administration Protocol Command Execution ----- Intrusões: 0 
+Assinatura: ET EXPLOIT Zyxel NAS RCE Attempt Inbound (CVE-2020-9054) M1 ----- Intrusões: 1 
+
+====== RESULTADO ======
+Total Intrusão: 42
+Maior Quantidade: ID: 53 - Assinatura: ET EXPLOIT COMTREND ADSL Router CT-5367 Remote DNS Change Attempt - Quantidade: 14
+---------------------------------------------------------------------
+
+
+---------------------------------------------------------------------
+ID 7 --- web-application-attack
+Assinatura: ET WEB_SERVER 401TRG Generic Webshell Request - POST with wget in body ----- Intrusões: 33 
+Assinatura: ET SCAN Tomcat Auth Brute Force attempt (admin) ----- Intrusões: 2 
+Assinatura: GPL EXPLOIT echo command attempt ----- Intrusões: 1 
+Assinatura: GPL WEB_SERVER .htpasswd access ----- Intrusões: 0 
+Assinatura: ET WEB_SPECIFIC_APPS JoomSocial AvatarUpload RCE ----- Intrusões: 0 
+Assinatura: ET WEB_SERVER PHP tags in HTTP POST ----- Intrusões: 4 
+Assinatura: ET WEB_SPECIFIC_APPS PHP-CGI query string parameter vulnerability ----- Intrusões: 0 
+Assinatura: ET EXPLOIT Joomla RCE M3 (Serialized PHP in XFF) ----- Intrusões: 0 
+Assinatura: ET WEB_SPECIFIC_APPS ECSHOP user.php SQL INJECTION via Referer ----- Intrusões: 0 
+Assinatura: GPL EXPLOIT cmd? access ----- Intrusões: 1 
+
+====== RESULTADO ======
+Total Intrusão: 41
+Maior Quantidade: ID: 28 - Assinatura: ET WEB_SERVER 401TRG Generic Webshell Request - POST with wget in body - Quantidade: 33
+---------------------------------------------------------------------
+
+
+---------------------------------------------------------------------
+ID 8 --- policy-violation
+Assinatura: ET POLICY Incoming Basic Auth Base64 HTTP Password detected unencrypted ----- Intrusões: 18 
+Assinatura: ET P2P Soulseek ----- Intrusões: 1 
+Assinatura: ET P2P TOR 1.0 Inbound Circuit Traffic ----- Intrusões: 0 
+Assinatura: ET P2P TOR 1.0 Outbound Circuit Traffic ----- Intrusões: 0 
+Assinatura: ET POLICY Office Document Containing AutoExec Macro Via smtp ----- Intrusões: 0 
+
+====== RESULTADO ======
+Total Intrusão: 19
+Maior Quantidade: ID: 49 - Assinatura: ET POLICY Incoming Basic Auth Base64 HTTP Password detected unencrypted - Quantidade: 18
+---------------------------------------------------------------------
+
+
+---------------------------------------------------------------------
+ID 9 --- attempted-dos
+Assinatura: ET DOS Possible NTP DDoS Inbound Frequent Un-Authed MON_LIST Requests IMPL 0x03 ----- Intrusões: 14 
+Assinatura: ET DOS Possible NTP DDoS Inbound Frequent Un-Authed MON_LIST Requests IMPL 0x02 ----- Intrusões: 2 
+
+====== RESULTADO ======
+Total Intrusão: 16
+Maior Quantidade: ID: 54 - Assinatura: ET DOS Possible NTP DDoS Inbound Frequent Un-Authed MON_LIST Requests IMPL 0x03 - Quantidade: 14
+---------------------------------------------------------------------
+
+
+---------------------------------------------------------------------
+ID 10 --- attempted-user
+Assinatura: ET EXPLOIT Possible ZyXEL P660HN-T v1 RCE ----- Intrusões: 3 
+Assinatura: ET EXPLOIT Oracle Weblogic Server Deserialization Remote Command Execution ----- Intrusões: 1 
+Assinatura: ET EXPLOIT bin bash base64 encoded Remote Code Execution 1 ----- Intrusões: 0 
+Assinatura: ET EXPLOIT bin bash base64 encoded Remote Code Execution 3 ----- Intrusões: 0 
+Assinatura: ET EXPLOIT file_put_contents php base64 encoded Remote Code Execution 1 ----- Intrusões: 0 
+Assinatura: ET EXPLOIT php script base64 encoded Remote Code Execution 3 ----- Intrusões: 0 
+Assinatura: ET EXPLOIT Generic system shell command to php base64 encoded Remote Code Execution 1 ----- Intrusões: 0 
+Assinatura: ET EXPLOIT Generic system shell command to php base64 encoded Remote Code Execution 2 ----- Intrusões: 0 
+Assinatura: ET EXPLOIT php script double base64 encoded Remote Code Execution 3 ----- Intrusões: 0 
+Assinatura: ET EXPLOIT Generic system shell command to php base64 encoded Remote Code Execution 3 ----- Intrusões: 0 
+Assinatura: ET EXPLOIT Generic system shell command to php base64 encoded Remote Code Execution 4 ----- Intrusões: 0 
+Assinatura: ET EXPLOIT Generic system shell command to php base64 encoded Remote Code Execution 5 ----- Intrusões: 0 
+Assinatura: ET EXPLOIT Generic system shell command to php base64 encoded Remote Code Execution 6 ----- Intrusões: 0 
+Assinatura: ET EXPLOIT file_put_contents php base64 encoded Remote Code Execution 2 ----- Intrusões: 0 
+Assinatura: ET EXPLOIT file_put_contents php base64 encoded Remote Code Execution 3 ----- Intrusões: 0 
+Assinatura: ET EXPLOIT bin bash base64 encoded Remote Code Execution 2 ----- Intrusões: 0 
+Assinatura: ET EXPLOIT php script base64 encoded Remote Code Execution 1 ----- Intrusões: 0 
+Assinatura: ET EXPLOIT php script base64 encoded Remote Code Execution 2 ----- Intrusões: 0 
+Assinatura: ET EXPLOIT php script double base64 encoded Remote Code Execution 1 ----- Intrusões: 0 
+Assinatura: ET EXPLOIT php script double base64 encoded Remote Code Execution 2 ----- Intrusões: 0 
+Assinatura: ET EXPLOIT php script double base64 encoded Remote Code Execution 4 ----- Intrusões: 0 
+Assinatura: ET EXPLOIT php script double base64 encoded Remote Code Execution 5 ----- Intrusões: 0 
+Assinatura: ET EXPLOIT php script double base64 encoded Remote Code Execution 6 ----- Intrusões: 0 
+Assinatura: ET EXPLOIT php script double base64 encoded Remote Code Execution 7 ----- Intrusões: 0 
+Assinatura: ET EXPLOIT php script double base64 encoded Remote Code Execution 8 ----- Intrusões: 0 
+Assinatura: ET EXPLOIT php script double base64 encoded Remote Code Execution 9 ----- Intrusões: 0 
+Assinatura: ET WEB_SPECIFIC_APPS ELF file magic encoded ASCII Inbound Web Servers Likely Command Execution 4 ----- Intrusões: 0 
+Assinatura: ET WEB_SERVER SQL sp_password attempt ----- Intrusões: 0 
+Assinatura: ET WEB_SERVER SQL sp_delete_alert attempt ----- Intrusões: 0 
+Assinatura: ET WEB_SERVER ATTACKER SQLi - SELECT and Schema Columns ----- Intrusões: 0 
+Assinatura: ET WEB_SERVER Apache Solr Arbitrary XSLT inclusion attack ----- Intrusões: 0 
+Assinatura: ET WEB_SPECIFIC_APPS cmd powershell base64 encoded to Web Server 1 ----- Intrusões: 0 
+Assinatura: ET WEB_SPECIFIC_APPS cmd powershell base64 encoded to Web Server 2 ----- Intrusões: 0 
+Assinatura: ET WEB_SPECIFIC_APPS cmd powershell base64 encoded to Web Server 3 ----- Intrusões: 0 
+Assinatura: ET WEB_SPECIFIC_APPS ELF file magic encoded Base64 UTF-8 Inbound Web Servers Likely Command Execution 5 ----- Intrusões: 0 
+Assinatura: ET WEB_SPECIFIC_APPS ELF file magic encoded Base64 UTF-8 Inbound Web Servers Likely Command Execution 6 ----- Intrusões: 0 
+Assinatura: ET WEB_SPECIFIC_APPS ELF file magic encoded Base64 UTF-8 Inbound Web Servers Likely Command Execution 7 ----- Intrusões: 0 
+Assinatura: ET WEB_SPECIFIC_APPS ELF file magic encoded Base64 Hex Escape Inbound Web Servers Likely Command Execution 8 ----- Intrusões: 0 
+Assinatura: ET WEB_SPECIFIC_APPS ELF file magic encoded Base64 Hex Escape Inbound Web Servers Likely Command Execution 9 ----- Intrusões: 0 
+Assinatura: ET WEB_SPECIFIC_APPS ELF file magic encoded Base64 Hex Escape Inbound Web Servers Likely Command Execution 10 ----- Intrusões: 0 
+
+====== RESULTADO ======
+Total Intrusão: 4
+Maior Quantidade: ID: 74 - Assinatura: ET EXPLOIT Possible ZyXEL P660HN-T v1 RCE - Quantidade: 3
+---------------------------------------------------------------------
+
+
+---------------------------------------------------------------------
+ID 11 --- successful-admin
+Assinatura: GPL EXPLOIT Microsoft cmd.exe banner ----- Intrusões: 1 
+Assinatura: ET POLICY Dameware Remote Control Service Install ----- Intrusões: 0 
+
+====== RESULTADO ======
+Total Intrusão: 1
+Maior Quantidade: ID: 78 - Assinatura: GPL EXPLOIT Microsoft cmd.exe banner - Quantidade: 1
+---------------------------------------------------------------------
+
+
+---------------------------------------------------------------------
+ID 12 --- trojan-activity
+Assinatura: ET ATTACK_RESPONSE LaZagne Artifact Outbound in FTP ----- Intrusões: 1 
+Assinatura: ET EXPLOIT SolusVM 1.13.03 Access to solusvmc-node setuid bin ----- Intrusões: 0 
+Assinatura: ET MALWARE Spy Banker Outbound Communication Attempt ----- Intrusões: 0 
+Assinatura: ET MALWARE Win32/Banbra Banking Trojan Communication ----- Intrusões: 0 
+Assinatura: ET MALWARE ATTACKER IRCBot - The command completed successfully - PRIVMSG Response ----- Intrusões: 0 
+Assinatura: ET MALWARE ATTACKER IRCBot - PRIVMSG Response - net command output ----- Intrusões: 0 
+Assinatura: ET MALWARE ATTACKER IRCBot - PRIVMSG Response - ipconfig command output ----- Intrusões: 0 
+Assinatura: ET MALWARE ATTACKER IRCBot - PRIVMSG Response - Directory Listing *nix ----- Intrusões: 0 
+Assinatura: ET MALWARE ATTACKER IRCBot - PRIVMSG Response - Directory Listing ----- Intrusões: 0 
+Assinatura: ET MALWARE Possible Zendran ELF IRCBot Joining Channel ----- Intrusões: 0 
+Assinatura: ET MALWARE Possible Zendran ELF IRCBot Joining Channel 2 ----- Intrusões: 0 
+Assinatura: ET MALWARE Windows set Microsoft Windows DOS prompt command exit OUTBOUND ----- Intrusões: 0 
+Assinatura: ET MALWARE Windows nbtstat -a Microsoft Windows DOS prompt command exit OUTBOUND ----- Intrusões: 0 
+Assinatura: ET MALWARE Windows nbtstat -n Microsoft Windows DOS prompt command exit OUTBOUND ----- Intrusões: 0 
+Assinatura: ET MALWARE Windows nbtstat -r Microsoft Windows DOS prompt command exit OUTBOUND ----- Intrusões: 0 
+Assinatura: ET MALWARE Windows dir Microsoft Windows DOS prompt command exit OUTBOUND ----- Intrusões: 0 
+Assinatura: ET MALWARE Windows driverquery -v Microsoft Windows DOS prompt command exit OUTBOUND ----- Intrusões: 0 
+Assinatura: ET MALWARE Windows driverquery -si Microsoft Windows DOS prompt command exit OUTBOUND ----- Intrusões: 0 
+Assinatura: ET MALWARE Windows qwinsta Microsoft Windows DOS prompt command exit OUTBOUND ----- Intrusões: 0 
+Assinatura: ET MALWARE Windows quser Microsoft Windows DOS prompt command exit OUTBOUND ----- Intrusões: 0 
+Assinatura: ET MALWARE Windows gpresult Microsoft Windows DOS prompt command exit OUTBOUND ----- Intrusões: 0 
+Assinatura: ET MALWARE Windows WMIC OS get Microsoft Windows DOS prompt command exit OUTBOUND ----- Intrusões: 0 
+Assinatura: ET MALWARE Windows WMIC COMPUTERSYSTEM get Microsoft Windows DOS prompt command exit OUTBOUND ----- Intrusões: 0 
+Assinatura: ET MALWARE Windows WMIC NETLOGIN get Microsoft Windows DOS prompt command exit OUTBOUND ----- Intrusões: 0 
+Assinatura: ET MALWARE Windows WMIC NIC get Microsoft Windows DOS prompt command exit OUTBOUND ----- Intrusões: 0 
+Assinatura: ET MALWARE Windows WMIC PROCESS get Microsoft Windows DOS prompt command exit OUTBOUND ----- Intrusões: 0 
+Assinatura: ET MALWARE Windows WMIC SERVER get Microsoft Windows DOS prompt command exit OUTBOUND ----- Intrusões: 0 
+Assinatura: ET MALWARE Windows WMIC SHARE get Microsoft Windows DOS prompt command exit OUTBOUND ----- Intrusões: 0 
+Assinatura: ET MALWARE Windows WMIC SYSACCOUNT get Microsoft Windows DOS prompt command exit OUTBOUND ----- Intrusões: 0 
+Assinatura: ET MALWARE Windows WMIC STARTUP get Microsoft Windows DOS prompt command exit OUTBOUND ----- Intrusões: 0 
+Assinatura: ET MALWARE Windows WMIC SERVICE get Microsoft Windows DOS prompt command exit OUTBOUND ----- Intrusões: 0 
+Assinatura: ET MOBILE_MALWARE Android/Code4hk.A Checkin ----- Intrusões: 0 
+Assinatura: ET WEB_SERVER allow_url_include PHP config option in uri ----- Intrusões: 4 
+Assinatura: ET WEB_SERVER safe_mode PHP config option in uri ----- Intrusões: 0 
+Assinatura: ET WEB_SERVER suhosin.simulation PHP config option in uri ----- Intrusões: 0 
+Assinatura: ET WEB_SERVER disable_functions PHP config option in uri ----- Intrusões: 0 
+Assinatura: ET WEB_SERVER open_basedir PHP config option in uri ----- Intrusões: 0 
+Assinatura: ET WEB_SERVER auto_prepend_file PHP config option in uri ----- Intrusões: 0 
+Assinatura: ET MALWARE DNS Reply Sinkhole - Anubis - 195.22.26.192/26 ----- Intrusões: 4 
+Assinatura: ET WORM TheMoon.linksys.router 2 ----- Intrusões: 3 
+
+====== RESULTADO ======
+Total Intrusão: 12
+Maior Quantidade: ID: 201 - Assinatura: ET WEB_SERVER allow_url_include PHP config option in uri - Quantidade: 4
+---------------------------------------------------------------------
+
+
+---------------------------------------------------------------------
+ID 13 --- misc-activity
+Assinatura: ET CHAT IRC authorization message ----- Intrusões: 1 
+Assinatura: ET EXPLOIT Serialized Java Object Calling Common Collection Function ----- Intrusões: 0 
+Assinatura: GPL POLICY PCAnywhere server response ----- Intrusões: 1 
+
+====== RESULTADO ======
+Total Intrusão: 2
+Maior Quantidade: ID: 80 - Assinatura: ET CHAT IRC authorization message - Quantidade: 1
+---------------------------------------------------------------------
+
+
+---------------------------------------------------------------------
+ID 14 --- command-and-control
+Assinatura: ET MALWARE LDPinch Checkin (3) ----- Intrusões: 1 
+Assinatura: ET MALWARE Py/MechaFlounder CnC Activity - Reporting Download Command Success ----- Intrusões: 0 
+Assinatura: ET MALWARE Py/MechaFlounder CnC Activity - Reporting Download Command Error ----- Intrusões: 0 
+Assinatura: ET MALWARE Py/MechaFlounder CnC Activity - Reporting Upload Command Success ----- Intrusões: 0 
+Assinatura: ET MALWARE Py/MechaFlounder CnC Activity - Reporting Upload Command Error ----- Intrusões: 0 
+Assinatura: ET MALWARE Py/MechaFlounder CnC Activity - Reporting Directory Change Command Success ----- Intrusões: 0 
+Assinatura: ET MALWARE Py/MechaFlounder CnC Activity - Reporting Sleep Command Success ----- Intrusões: 0 
+
+====== RESULTADO ======
+Total Intrusão: 1
+Maior Quantidade: ID: 117 - Assinatura: ET MALWARE LDPinch Checkin (3) - Quantidade: 1
+---------------------------------------------------------------------
+
+
+---------------------------------------------------------------------
+ID 15 --- web-application-activity
+Assinatura: GPL MISC HP Web JetAdmin file write attempt ----- Intrusões: 1 
+
+====== RESULTADO ======
+Total Intrusão: 1
+Maior Quantidade: ID: 146 - Assinatura: GPL MISC HP Web JetAdmin file write attempt - Quantidade: 1
+---------------------------------------------------------------------
+
+
+---------------------------------------------------------------------
+ID 16 --- network-scan
+Assinatura: ET SCAN Zmap User-Agent (zgrab) ----- Intrusões: 32 
+Assinatura: ET SCAN NETWORK Incoming Masscan detected ----- Intrusões: 4 
+
+====== RESULTADO ======
+Total Intrusão: 36
+Maior Quantidade: ID: 189 - Assinatura: ET SCAN Zmap User-Agent (zgrab) - Quantidade: 32
+---------------------------------------------------------------------
+
+
+---------------------------------------------------------------------
+ID 17 --- successful-recon-limited
+Assinatura: ET WEB_SERVER WEB-PHP phpinfo access ----- Intrusões: 4 
+
+====== RESULTADO ======
+Total Intrusão: 4
+Maior Quantidade: ID: 198 - Assinatura: ET WEB_SERVER WEB-PHP phpinfo access - Quantidade: 4
+---------------------------------------------------------------------
+
+
+
+===========RESULTADO PORCENTAGEM===========
+ID: 1 --- Classe: protocol-command-decode
+Soma: 681 - 10.101%
+
+ID: 2 --- Classe: bad-unknown
+Soma: 3794 - 56.274%
+
+ID: 3 --- Classe: misc-attack
+Soma: 1184 - 17.562%
+
+ID: 4 --- Classe: attempted-recon
+Soma: 876 - 12.993%
+
+ID: 5 --- Classe: targeted-activity
+Soma: 28 - 0.415%
+
+ID: 6 --- Classe: attempted-admin
+Soma: 42 - 0.623%
+
+ID: 7 --- Classe: web-application-attack
+Soma: 41 - 0.608%
+
+ID: 8 --- Classe: policy-violation
+Soma: 19 - 0.282%
+
+ID: 9 --- Classe: attempted-dos
+Soma: 16 - 0.237%
+
+ID: 10 --- Classe: attempted-user
+Soma: 4 - 0.059%
+
+ID: 11 --- Classe: successful-admin
+Soma: 1 - 0.015%
+
+ID: 12 --- Classe: trojan-activity
+Soma: 12 - 0.178%
+
+ID: 13 --- Classe: misc-activity
+Soma: 2 - 0.030%
+
+ID: 14 --- Classe: command-and-control
+Soma: 1 - 0.015%
+
+ID: 15 --- Classe: web-application-activity
+Soma: 1 - 0.015%
+
+ID: 16 --- Classe: network-scan
+Soma: 36 - 0.534%
+
+ID: 17 --- Classe: successful-recon-limited
+Soma: 4 - 0.059%
+
+
+
+TOTAL DE INTRUSOES 2.751.907
+TRIAGEM 6803 (Firewall+Switch) 6738 (Switch).
